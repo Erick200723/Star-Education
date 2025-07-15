@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/atividades.css">
+    <link rel="icon" href="/img/1000114397.png" type="image/x-png" sizes="256x256"  href="icone256.png">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+     <title>Star Education / Atividades</title>
+  </head>
+  <body>
+</head>
+<body>
+<nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+         <span class="border border-2 border-dark rounded-circle p-2">
+           <i id="toggleButton" onclick="toggleSidebar()" class="bi bi-person-fill"></i>
+        </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <img id="nomebar" src="/img/1000114398-removebg-preview.png" alt="Logo" class="navbar-logo">
+      </ul>
+    </div>
+    <input id="pesquisar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+  </div>
+</nav>
+<section id="conteudoPrincipal"  class="conteudo">
+     <div class="container_atividades">
+        <h1 class="title">Atividades</h1>
+        <p>Bem-vindo à seção de atividades! Aqui você encontrará uma variedade de tarefas e exercícios para praticar seus conhecimentos.</p>
+        
+        <div class="atividade">
+            <div class="atividade-cabecalho">
+                <h3>Atividade Geografia: Industrialisação<br>Brasileira</h3>
+                <button class="expandir-btn">+</button>
+            </div>
+            <div class="atividade-conteudo">
+                <p>Conteúdo detalhado da atividade 1 vai aqui...<br> Embreve</p>
+                <label id="terms-label" class="custom-checkbox" for="terms">Atividade Pendente</label>
+                <input type="checkbox" id="terms" class="custom-checkbox-input" required>
+            </div>
+        </div>
+        
+        <div class="atividade">
+            <div class="atividade-cabecalho">
+                <h3>Atividade Matemática: Analise Cobinatoria </h3>
+                <button class="expandir-btn">+</button>
+            </div>
+            <div class="atividade-conteudo">
+                <p>Conteúdo detalhado da atividade 2 vai aqui...<br> Embreve</p>
+                <label id="terms-label" class="custom-checkbox" for="terms">Atividade Pendente</label>
+                <input type="checkbox" id="terms" class="custom-checkbox-input" required>
+            </div>
+        </div>
+        
+        <div class="atividade">
+            <div class="atividade-cabecalho">
+                <h3>Atividade Quimica: Nomeclatura dos <br>Hidrocarbonetos</h3>
+                <button class="expandir-btn">+</button>
+            </div>
+            <div class="atividade-conteudo">
+                <p>Conteúdo detalhado da atividade 3 vai aqui...<br> Embreve</p>
+                <label id="terms-label" class="custom-checkbox" for="terms">Atividade Pendente</label>
+                <input type="checkbox" id="terms" class="custom-checkbox-input" required>
+            </div>
+        </div>
+        
+        <div class="atividade">
+            <div class="atividade-cabecalho">
+                <h3>Atividade Marketing digital: Projeto de desenvolvoimento do <br>Produto fiquiticio</h3>
+                <button class="expandir-btn">+</button>
+            </div>
+            <div class="atividade-conteudo">
+                <p>Conteúdo detalhado da atividade 4 vai aqui...<br> Embreve</p>
+                <label id="terms-label" class="custom-checkbox" for="terms">Atividade Pendente</label>
+                <input type="checkbox" id="terms" class="custom-checkbox-input" required>
+            </div>
+        </div>
+    </div>
+</section>
+  <div id="minhaSidebar" class="sidebar">
+    <a href="/home.html">Início</a>
+    <a href="#">Atividades</a>
+    <a href="#">Aulas</a>
+    <a href="#">Material</a>
+  </div>
+<script src="/js/Atividades.js"></script>
+</body>
+</html>
