@@ -26,16 +26,21 @@ document.querySelectorAll('.expandir-btn').forEach(btn => {
     });
 });
 
-document.getElementById("terms").addEventListener("click", function(){
-    const label = document.getElementById("terms-label");
-    var checkbox = false;
+const checkboxes = document.querySelectorAll(".custom-checkbox-input");
 
-    if(checkbox){
-        label.innerHTML = "Atividade Pendente";
-        label.classList.remove("success");
-    }else{
-        label.innerHTML = "Atividade Concluída";
-        label.classList.add("success");
-        document.getElementById("terms").disabled = true;
-    }
-})
+checkboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener("change", function() {
+        
+        const label = document.querySelector(`label[for="${this.id}"]`);
+        
+        if(this.checked) {
+            label.innerHTML = "Atividade Concluída";
+            label.classList.add("success");
+            this.disabled = true;
+        } else {
+            label.innerHTML = "Atividade Pendente";
+            label.classList.remove("success");
+            this.disabled = false;
+        }
+    });
+});

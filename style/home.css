@@ -396,3 +396,11 @@ body.shifted {
 .footer-bottom a:hover {
   color: #FFA500;
 }
+@media (max-width: 1700px) {
+    #nomebar {
+        max-height: 250px !important;
+        max-width: 300px;
+        left: 30%;
+        
+    }
+}
